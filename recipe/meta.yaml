@@ -6,7 +6,8 @@ build:
     number: 0
 
 source:
-    path: {{RECIPE_DIR}}/../
+    git_url: https://github.com/GorgonCryoEM/Gorgon.git
+    git_tag: conda-ci
 
 requirements:
     build:
