@@ -9,6 +9,9 @@ env:
   matrix:
     
     - CONDA_PY=27
+  global:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    - secure: "tJ4Zba/XvY6+b1Cj9D8FNwFNAlzgMv11U4KM8e8m/aw1lmyizl44D3L5CDPpwSEwZ1Ti8DYPkm/F3pflaBl7Yucey8LCJnp1t+Eb+BY6rQyvygIMBMrpwZgbtZtZ74182hEBXlaHirLiTIuMLWcPiaHmbsrCCDN3731oJ24IMzJUW+/jEZzMnj7z7NootTldCa5WtW+u32L8VexpCwgO1yVpi0RJCSR+14kNwAcYoNLSIVigM+YnpwtYSUh2S9J+lvZk8K/0MaNSSuMB/rgazcWPTCiGa2KqCfKQNuuRAwyEzlRhzPjmxx9ADiAN632ZP2T3ekwlCiYPYN5aCK/z7qA+PsX6XB6gle2uLiMrPvcMAsi7pHsTlZNA5+HxkfUSmrut68t0f4UmqmMgiJ1NJr6L4nx4vp+gCrEi2ymJ1VHy4EtdUE/sGUHEvAJpnln6j2vtRHOFmCRSng0h3ksEyvkp8GGYLTgTg/yhk4CERaitXCLJ5a/CMM41Qe6lr5k3lQsL82gBWYfIBxXZpO6cRrfmuDVwO46Tn9C09NmtDHOICgIje1afiZzbuqw98mxvydv0npCMJH4zTXoeoIdo54jTgIaASXbf3HLM9eSjt1iPRRxF7Q7bLhTElA3sM3g7e/cTQuzS9dFdrTPAUPM/3uoRAqb9ydyj1v3yftpXfdk="
 
 
 before_install:
@@ -25,6 +28,7 @@ install:
       bash $MINICONDA_FILE -b
 
       export PATH=/Users/travis/miniconda3/bin:$PATH
+      conda config --add channels gorgoncryoem/label/dependency
       conda config --add channels conda-forge
       conda config --set show_channel_urls true
       conda install --yes --quiet conda-forge-build-setup
@@ -33,4 +37,4 @@ install:
 script:
   - conda build ./recipe
 
-  - ./ci_support/upload_or_check_non_existence.py ./recipe conda-forge --channel=main
+  - ./ci_support/upload_or_check_non_existence.py ./recipe gorgoncryoem --channel=dev

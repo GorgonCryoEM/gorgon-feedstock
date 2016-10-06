@@ -14,6 +14,7 @@ config=$(cat <<CONDARC
 
 channels:
  - conda-forge
+ - gorgoncryoem/label/dependency
  - defaults # As we need conda-build
 
 conda-build:
@@ -41,10 +42,18 @@ conda clean --lock
 conda install --yes --quiet conda-forge-build-setup
 source run_conda_forge_build_setup
 
+
+# Install the yum requirements defined canonically in the
+# "recipe/yum_requirements.txt" file. After updating that file,
+# run "conda smithy rerender" and this line be updated
+# automatically.
+yum install -y libXi-devel libXmu-devel mesa-libGLU-devel
+
+
 # Embarking on 1 case(s).
     set -x
     export CONDA_PY=27
     set +x
     conda build /recipe_root --quiet || exit 1
-    /feedstock_root/ci_support/upload_or_check_non_existence.py /recipe_root conda-forge --channel=main || exit 1
+    /feedstock_root/ci_support/upload_or_check_non_existence.py /recipe_root gorgoncryoem --channel=dev || exit 1
 EOF
