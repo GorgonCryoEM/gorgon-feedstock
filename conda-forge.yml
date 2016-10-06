@@ -4,3 +4,12 @@ travis:
 appveyor:
   secure:
     BINSTAR_TOKEN: OcAUZlpSDgQtX8QAIX7qr8iZhsrOWwlmuyDECE7wAYBRlvXIBJ7BbXhX/Fmz4Oib
+
+channels:
+  sources: [gorgoncryoem/label/dependency, conda-forge]
+  targets:
+    - [gorgoncryoem, dev]
+
+github:
+  user_or_org: GorgonCryoEM
+  repo_name: gorgon-feedstock
