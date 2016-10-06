@@ -13,16 +13,20 @@ requirements:
     build:
         - cmake >=3.4
         - python 2.7.*
-        - boost
+        - boost         # [not win]
+        - boost-gorgon  # [win]
         - fftw
         - freeglut  # [not osx]
+        - setuptools
     run:
         - python 2.7.*
-        - boost
+        - boost         # [not win]
+        - boost-gorgon  # [win]
         - fftw
         - freeglut  # [not osx]
         - pyqt
         - pyopengl
+        - vs2015_runtime  # [win]
 
 about:
   summary: Gorgon, an interactive molecular modeling system
