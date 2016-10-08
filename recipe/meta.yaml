@@ -25,6 +25,7 @@ requirements:
         - boost-gorgon  # [win]
         - fftw
         - freeglut  # [not osx]
+        - termcolor
         - pyqt
         - pyopengl
         - vs2015_runtime  # [win]
