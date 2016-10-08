@@ -4,6 +4,7 @@ package:
 
 build:
     number: 0
+    skip: True  # [win]
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon.git
