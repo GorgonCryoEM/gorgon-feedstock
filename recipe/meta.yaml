@@ -19,6 +19,7 @@ requirements:
         - fftw
         - freeglut  # [not osx]
         - setuptools
+        - toolchain  # [not win]
     run:
         - python 2.7.*
         - boost         # [not win]
