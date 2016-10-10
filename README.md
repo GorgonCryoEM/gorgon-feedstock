@@ -1,7 +1,7 @@
 About gorgon
 ============
 
-Home: 
+Home: http://gorgon.wustl.edu
 
 Package license: 
 
@@ -9,6 +9,13 @@ Feedstock license: BSD 3-Clause
 
 Summary: Gorgon, an interactive molecular modeling system
 
+Gorgon is an interactive molecular modeling system
+specifically geared towards cryo-EM and other low resolution
+structures of macromolecular complexes. The long term goal of
+the gorgon project is to be able to address to every part of
+the molecular modeling pipeline starting from the initial
+volumetric reconstruction of the complex all the way to the
+final placement of each individual atom.
 
 
 Installing gorgon
