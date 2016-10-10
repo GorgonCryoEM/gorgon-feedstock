@@ -55,5 +55,5 @@ yum install -y libXi-devel libXmu-devel mesa-libGLU-devel
     export CONDA_PY=27
     set +x
     conda build /recipe_root --quiet || exit 1
-    /feedstock_root/ci_support/upload_or_check_non_existence.py /recipe_root gorgoncryoem --channel=dev || exit 1
+    upload_or_check_non_existence /recipe_root gorgoncryoem --channel=dev || exit 1
 EOF
