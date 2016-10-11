@@ -63,4 +63,4 @@ build: off
 test_script:
     - "%CMD_IN_ENV% conda build recipe --quiet"
 deploy_script:
-    - cmd: upload_or_check_non_existence .\recipe gorgoncryoem --channel=dev
+    - cmd: upload_or_check_non_existence .\recipe gorgoncryoem --channel=main
