@@ -1,7 +1,7 @@
 About gorgon
 ============
 
-Home: 
+Home: http://gorgon.wustl.edu
 
 Package license: 
 
@@ -9,6 +9,13 @@ Feedstock license: BSD 3-Clause
 
 Summary: Gorgon, an interactive molecular modeling system
 
+Gorgon is an interactive molecular modeling system
+specifically geared towards cryo-EM and other low resolution
+structures of macromolecular complexes. The long term goal of
+the gorgon project is to be able to address to every part of
+the molecular modeling pipeline starting from the initial
+volumetric reconstruction of the complex all the way to the
+final placement of each individual atom.
 
 
 Installing gorgon
@@ -26,12 +33,6 @@ Once the `gorgoncryoem` channel has been enabled, `gorgon` can be installed with
 conda install gorgon
 ```
 
-Or, without updating your channel list, `gorgon` can be installed with a single command:
-
-```
-conda install gorgon -c gorgoncryoem
-```
-
 It is possible to list all of the versions of `gorgon` available on your platform with:
 
 ```
@@ -43,9 +44,9 @@ conda search gorgon --channel gorgoncryoem
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock/tree/master.svg?style=shield)](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock.svg?style=shield)](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/GorgonCryoEM/gorgon-feedstock.svg?branch=master)](https://travis-ci.org/GorgonCryoEM/gorgon-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/GorgonCryoEM/gorgon-feedstock?svg=True)](https://ci.appveyor.com/project/GorgonCryoEM/gorgon-feedstock/branch/master)
 
 Current release info
 ====================

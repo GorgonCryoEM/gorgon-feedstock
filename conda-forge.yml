@@ -8,7 +8,7 @@ appveyor:
 channels:
   sources: [gorgoncryoem/label/dependency, conda-forge]
   targets:
-    - [gorgoncryoem, dev]
+    - [gorgoncryoem, main]
 
 github:
   user_or_org: GorgonCryoEM
