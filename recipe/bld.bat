@@ -7,7 +7,7 @@ if errorlevel 1 exit 1
 cd %builddir%
 if errorlevel 1 exit 1
 
-cmake %SRC_DIR% -G "NMake Makefiles"
+cmake %SRC_DIR% -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release
 if errorlevel 1 exit 1
 
 cmake --build %builddir% --config Release --target install
