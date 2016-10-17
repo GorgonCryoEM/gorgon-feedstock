@@ -1,13 +1,13 @@
 package:
     name: gorgon
-    version: 3.0a
+    version: 3.0.1a
 
 build:
     number: 1
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon.git
-    git_tag: v3.0a
+    git_tag: release/v3.0.1a
 
 requirements:
     build:
