@@ -19,4 +19,4 @@ for f in ${files[@]};do
     echo "======================================="
 done
 
-cmake --version
+ltrace -S cmake --version
