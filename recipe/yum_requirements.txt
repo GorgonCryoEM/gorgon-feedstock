@@ -1,3 +1,4 @@
 libXi-devel
 libXmu-devel
 mesa-libGLU-devel
+ltrace
