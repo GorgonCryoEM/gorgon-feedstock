@@ -47,7 +47,7 @@ source run_conda_forge_build_setup
 # "recipe/yum_requirements.txt" file. After updating that file,
 # run "conda smithy rerender" and this line be updated
 # automatically.
-yum install -y libXi-devel libXmu-devel mesa-libGLU-devel ltrace
+yum install -y libXi-devel libXmu-devel mesa-libGLU-devel ltrace libarchive
 
 
 # Embarking on 1 case(s).
