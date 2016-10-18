@@ -21,8 +21,9 @@ done
 
 ltrace -S -C cmake --version
 
-cmake $SRC_DIR
-cmake --build ${build_dir} --config Release --target install -- -j
+${PREFIX}/bin/cmake --version
+${PREFIX}/bin/cmake $SRC_DIR
+${PREFIX}/bin/cmake --build ${build_dir} --config Release --target install -- -j
  
 $PYTHON setup.py install
 
