@@ -19,6 +19,8 @@ for f in ${files[@]};do
     ldd $f
 done
 
+echo $LD_LIBRARY_PATH
+
 ltrace -S -C cmake --version
 
 ${PREFIX}/bin/cmake --version
