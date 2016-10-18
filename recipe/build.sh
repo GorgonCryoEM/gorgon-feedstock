@@ -14,6 +14,7 @@ pkg_files=( `find /opt/conda/pkgs/ -iname "libarch*"` )
 files=( $PREFIX/bin/cmake `ls $PREFIX/lib/libarch*.so*` ${pkg_files[@]} )
 
 for f in ${files[@]};do
+    readlink -e $f
     ls -l $f
 done
 
