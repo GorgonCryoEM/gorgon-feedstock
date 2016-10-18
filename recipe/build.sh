@@ -19,7 +19,7 @@ for f in ${files[@]};do
     echo "======================================="
 done
 
-#ltrace -S -C -ddd cmake --version
+ltrace -S -C cmake --version
 
 ${PREFIX}/bin/cmake --version
 ${PREFIX}/bin/cmake $SRC_DIR
