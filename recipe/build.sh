@@ -10,4 +10,10 @@ which -a cmake
 
 find ${PREFIX} -iname "libarch*"
 
+files=( $PREFIX/bin/cmake `ls $PREFIX/lib/libarch*` )
+
+for f in ${files};do
+    otool -L $f
+done
+
 cmake --version
