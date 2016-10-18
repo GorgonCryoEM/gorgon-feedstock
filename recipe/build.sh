@@ -19,6 +19,7 @@ for f in ${files[@]};do
     ldd $f
 done
 
+export LD_LIBRARY_PATH=${PREFOX}/lib:$LD_LIBRARY_PATH
 echo $LD_LIBRARY_PATH
 
 ltrace -S -C cmake --version
