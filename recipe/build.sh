@@ -10,7 +10,7 @@ which -a cmake
 
 find ${PREFIX} -iname "libarch*"
 
-files=( $PREFIX/bin/cmake `ls $PREFIX/lib/libarch*` )
+files=( $PREFIX/bin/cmake `ls $PREFIX/lib/libarch*.so*` )
 
 for f in ${files[@]};do
     echo "=========== $f ============="
