@@ -12,9 +12,9 @@ find ${PREFIX} -iname "libarch*"
 
 files=( $PREFIX/bin/cmake `ls $PREFIX/lib/libarch*` )
 
-for f in ${files};do
+for f in ${files[@]};do
     objdump -x $f | grep RPATH
-    ldd -v $f
+    ldd $f
 done
 
 cmake --version
