@@ -20,3 +20,9 @@ for f in ${files[@]};do
 done
 
 ltrace -S -C cmake --version
+
+cmake $SRC_DIR
+cmake --build ${build_dir} --config Release --target install -- -j
+ 
+$PYTHON setup.py install
+
