@@ -1,10 +1,12 @@
+{% set version = "3.0.1a" %}
+
 package:
     name: gorgon
-    version: 3.0.1a
+    version: {{ version }}
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon.git
-    git_tag: develop
+    git_tag: release/v{{ version }}
 
 build:
     number: 0
