@@ -43,7 +43,7 @@ test:
     - nose
     - docutils
   commands:
-    - nosetests --with-doctest --doctest-tests -s -vv -a \!long
+    - nosetests --with-doctest --doctest-tests -s -vv
 
 about:
   summary: Gorgon, an interactive molecular modeling system
