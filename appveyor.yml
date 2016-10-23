@@ -59,9 +59,10 @@ install:
 
     - cmd: conda config --set show_channel_urls true
     - cmd: conda install -c pelson/channel/development --yes --quiet obvious-ci
+    - cmd: conda config --add channels shadow_walker
     - cmd: conda config --add channels gorgoncryoem/label/dependency
     - cmd: conda config --add channels conda-forge
-    - cmd: conda install -n root --quiet --yes conda-forge-build-setup=3.4.0  
+    - cmd: conda install -n root --quiet --yes conda-forge-build-setup
     - cmd: run_conda_forge_build_setup
 
 # Skip .NET project specific build phase.
@@ -70,4 +71,4 @@ build: off
 test_script:
     - "%CMD_IN_ENV% conda build recipe --quiet"
 deploy_script:
-#    - cmd: upload_or_check_non_existence .\recipe gorgoncryoem --channel=main
+    - cmd: upload_or_check_non_existence .\recipe gorgoncryoem --channel=main
