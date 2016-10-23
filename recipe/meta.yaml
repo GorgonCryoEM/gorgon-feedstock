@@ -7,7 +7,7 @@ build:
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon.git
-    git_tag: fix/tests
+    git_tag: develop
 
 requirements:
     build:
