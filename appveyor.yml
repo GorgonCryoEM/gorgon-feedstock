@@ -62,7 +62,7 @@ install:
     - cmd: conda config --add channels shadow_walker
     - cmd: conda config --add channels gorgoncryoem/label/dependency
     - cmd: conda config --add channels conda-forge
-    - cmd: conda install --yes --quiet conda-forge-build-setup=3.4.2
+    - cmd: conda install -n root --quiet --yes conda-forge-build-setup=3.4.2
     - cmd: run_conda_forge_build_setup
 
 # Skip .NET project specific build phase.
