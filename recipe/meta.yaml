@@ -1,4 +1,4 @@
-{% set version = "3.0.1a" %}
+{% set version = "3.0.2a" %}
 {% set release_flag = false %}
 
 package:
@@ -14,8 +14,7 @@ source:
 {% endif %}
 
 build:
-    number: 0
-    skip: True  # [win]
+    number: 1
 
 requirements:
     build:

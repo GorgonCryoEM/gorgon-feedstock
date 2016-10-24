@@ -15,6 +15,7 @@ config=$(cat <<CONDARC
 channels:
  - conda-forge
  - gorgoncryoem/label/dependency
+ - shadow_walker
  - defaults # As we need conda-build
 
 conda-build:
@@ -39,7 +40,7 @@ echo "$config" > ~/.condarc
 # A lock sometimes occurs with incomplete builds. The lock file is stored in build_artefacts.
 conda clean --lock
 
-conda install --yes --quiet conda-forge-build-setup=3.4.0
+conda install --yes --quiet conda-forge-build-setup=3.4.2
 source run_conda_forge_build_setup
 
 
@@ -55,5 +56,5 @@ yum install -y libXi-devel libXmu-devel mesa-libGLU-devel
     export CONDA_PY=27
     set +x
     conda build /recipe_root --quiet || exit 1
-#    upload_or_check_non_existence /recipe_root gorgoncryoem --channel=main || exit 1
+    upload_or_check_non_existence /recipe_root gorgoncryoem --channel=main || exit 1
 EOF
