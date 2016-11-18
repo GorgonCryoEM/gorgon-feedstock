@@ -1,5 +1,5 @@
 {% set version = "3.0.8a" %}
-{% set release_flag = true %}
+{% set release_flag = false %}
 
 package:
     name: gorgon
