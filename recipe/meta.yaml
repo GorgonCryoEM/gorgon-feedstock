@@ -1,4 +1,4 @@
-{% set version = "3.0.7a" %}
+{% set version = "3.0.8a" %}
 {% set release_flag = false %}
 
 package:
