@@ -47,6 +47,9 @@ test:
     - nose                                                    
     - docutils                                                
   commands:                                                   
+    - dir demo
+    - dir demo\\groel
+    - dir demo\\groel\\refs
     - nosetests --with-doctest --doctest-tests -s -vv         
 
 about:
