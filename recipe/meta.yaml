@@ -43,7 +43,6 @@ test:
   source_files:                                               
     - tests                                                   
     - demo/groel                                              
-    - demo/groel/refs
   requires:                                                   
     - nose                                                    
     - docutils                                                
