@@ -35,16 +35,6 @@ requirements:
         - pyqt
         - pyopengl
 
-test:                                                         # [not win]
-  source_files:                                               # [not win]
-    - tests                                                   # [not win]
-    - demo/groel                                              # [not win]
-  requires:                                                   # [not win]
-    - nose                                                    # [not win]
-    - docutils                                                # [not win]
-  commands:                                                   # [not win]
-    - nosetests --with-doctest --doctest-tests -s -vv         # [not win]
-
 about:
   summary: Gorgon, an interactive molecular modeling system
   home:  http://gorgon.wustl.edu
