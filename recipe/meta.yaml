@@ -1,4 +1,4 @@
-{% set version = "3.0.10a" %}
+{% set version = "3.0.11a" %}
 {% set release_flag = false %}
 
 package:
@@ -37,7 +37,7 @@ requirements:
 test:                                                         # [not win]
   source_files:                                               # [not win]
     - tests                                                   # [not win]
-    - demo/groel                                              # [not win]
+    - demo                                                    # [not win]
   requires:                                                   # [not win]
     - nose                                                    # [not win]
     - docutils                                                # [not win]
