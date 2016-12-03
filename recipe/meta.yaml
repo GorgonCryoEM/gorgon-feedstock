@@ -37,7 +37,7 @@ requirements:
 test:                                                         # [not win]
   source_files:                                               # [not win]
     - tests                                                   # [not win]
-    - demo/groel                                              # [not win]
+    - demo                                                    # [not win]
   requires:                                                   # [not win]
     - nose                                                    # [not win]
     - docutils                                                # [not win]
