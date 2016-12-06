@@ -1,7 +1,7 @@
 {% set version = "3.0.12a" %}
-{% set release_flag = true %}
+{% set release_flag = false %}
 {% set filename = "Gorgon-" + version + ".tar.gz" %}
-{% set sha256 = "909f3e02ff0dc04fcf5747a68ee62818a00aa4d896980f417a88b29f890b0de8" %}
+{% set sha256 = "1f8a7f783dce975b55fb695635e2b84507002a89b044d010de1a6495d6400c29" %}
 
 package:
     name: gorgon
