@@ -1,4 +1,4 @@
-SET builddir=%SRC_DIR%\..\build_dir
+SET builddir=%SRC_DIR%\..\.build_dir
 
 rmdir /s /q %builddir%
 if errorlevel 1 exit 1
