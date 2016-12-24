@@ -1,5 +1,5 @@
-{% set version = "3.0.13a" %}
-{% set release_flag = false %}
+{% set version = "3.0.14a" %}
+{% set release_flag = true %}
 {% set filename = "Gorgon-" + version + ".tar.gz" %}
 {% set sha256 = "8dec748197a70d3036cbb0cf30b26ab7f7e4a5f3db13fa811fecfbdf64d02e12" %}
 
