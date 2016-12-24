@@ -15,7 +15,7 @@ config=$(cat <<CONDARC
 channels:
  - conda-forge
  - gorgoncryoem/label/dependency
- - shadow_walker
+ - shadow_walker/label/dev
  - defaults # As we need conda-build
 
 conda-build:

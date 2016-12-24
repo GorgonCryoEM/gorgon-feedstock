@@ -18,6 +18,18 @@ volumetric reconstruction of the complex all the way to the
 final placement of each individual atom.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock.svg?style=shield)](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/GorgonCryoEM/gorgon-feedstock.svg?branch=master)](https://travis-ci.org/GorgonCryoEM/gorgon-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/GorgonCryoEM/gorgon-feedstock?svg=True)](https://ci.appveyor.com/project/GorgonCryoEM/gorgon-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/gorgoncryoem/gorgon/badges/version.svg)](https://anaconda.org/gorgoncryoem/gorgon)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/gorgoncryoem/gorgon/badges/downloads.svg)](https://anaconda.org/gorgoncryoem/gorgon)
+
 Installing gorgon
 =================
 
@@ -40,18 +52,6 @@ conda search gorgon --channel gorgoncryoem
 ```
 
 
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock.svg?style=shield)](https://circleci.com/gh/GorgonCryoEM/gorgon-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/GorgonCryoEM/gorgon-feedstock.svg?branch=master)](https://travis-ci.org/GorgonCryoEM/gorgon-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/GorgonCryoEM/gorgon-feedstock?svg=True)](https://ci.appveyor.com/project/GorgonCryoEM/gorgon-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/gorgoncryoem/gorgon/badges/version.svg)](https://anaconda.org/gorgoncryoem/gorgon)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/gorgoncryoem/gorgon/badges/downloads.svg)](https://anaconda.org/gorgoncryoem/gorgon)
 
 
 Updating gorgon-feedstock
