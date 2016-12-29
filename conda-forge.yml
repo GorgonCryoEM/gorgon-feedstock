@@ -6,7 +6,7 @@ appveyor:
     BINSTAR_TOKEN: OcAUZlpSDgQtX8QAIX7qr8iZhsrOWwlmuyDECE7wAYBRlvXIBJ7BbXhX/Fmz4Oib
 
 channels:
-  sources: [shadow_walker/label/dev, gorgoncryoem/label/dependency, conda-forge]
+  sources: [defaults, shadow_walker/label/dev, gorgoncryoem/label/dependency, conda-forge]
   targets:
     - [gorgoncryoem, main]
 
