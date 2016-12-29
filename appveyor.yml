@@ -61,7 +61,7 @@ install:
     - cmd: call %CONDA_INSTALL_LOCN%\Scripts\activate.bat
     - cmd: set PYTHONUNBUFFERED=1
 
-    - cmd: conda install -n root --quiet --yes conda-forge-build-setup=3.4.2
+    - cmd: conda install --yes --quiet conda-forge-build-setup=3.4.2 --override-channels -c shadow_walker/label/dev
     - cmd: conda install -n root --quiet --yes obvious-ci
     - cmd: run_conda_forge_build_setup
 

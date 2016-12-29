@@ -38,15 +38,27 @@ requirements:
         - pyqt
         - pyopengl
 
-test:                                                         # [not win]
+test:
   source_files:                                               # [not win]
     - tests                                                   # [not win]
     - demo                                                    # [not win]
   requires:                                                   # [not win]
     - nose                                                    # [not win]
     - docutils                                                # [not win]
-  commands:                                                   # [not win]
+  commands:
     - nosetests --with-doctest --doctest-tests -s -vv         # [not win]
+    - gorgon-gui -h
+    - gorgon-gui binary-skeletonization -h
+    - gorgon-gui grayscale-skeletonization -h
+    - gorgon-gui sse-identification -h
+    - gorgon-gui sse-correspondence -h
+    - gorgon-gui calpha-placement -h
+    - gorgon-gui explorer -h
+    - gorgon-skeletonize -h
+    - gorgon-filter -h
+    - gorgon-sse-hunter -h
+    - gorgon-sse-correspondence -h
+    - gorgon-calpha-prep-tool -h
 
 about:
   summary: Gorgon, an interactive molecular modeling system
