@@ -18,20 +18,20 @@ source:
 {% endif %}
 
 build:
-    number: 0
+    number: 1
 
 requirements:
     build:
         - cmake >=3.4
         - python 2.7.*
-        - boost
+        - boost 1.62.*
         - fftw
         - freeglut  # [not osx]
         - setuptools
         - toolchain  # [not win]
     run:
         - python 2.7.*
-        - boost
+        - boost 1.62.*
         - fftw
         - freeglut  # [not osx]
         - termcolor
